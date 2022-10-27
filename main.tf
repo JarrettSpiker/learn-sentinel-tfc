@@ -4,9 +4,9 @@ provider "aws" {
   secret_key = var.aws_secret_access_key
   token = var.aws_session_token
   
-  assume_role {
-    role_arn     = "arn:aws:iam::651142589551:role/aws_jarrett.spiker_test-developer"
-  }
+#   assume_role {
+#     role_arn     = "arn:aws:iam::651142589551:role/aws_jarrett.spiker_test-developer"
+#   }
 }
 
 data "aws_ami" "ubuntu" {
