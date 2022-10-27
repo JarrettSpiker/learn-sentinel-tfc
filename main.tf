@@ -1,5 +1,8 @@
 provider "aws" {
   region = var.region
+  assume_role {
+    role_arn     = "arn:aws:iam::651142589551:role/aws_jarrett.spiker_test-developer"
+  }
 }
 
 data "aws_ami" "ubuntu" {
