@@ -1,5 +1,6 @@
 provider "aws" {
   region = var.region
+  token = var.aws_session_token
 }
 
 data "aws_ami" "ubuntu" {
